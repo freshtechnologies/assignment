@@ -1,0 +1,15 @@
+
+
+# File Naming Convention
+
+calendar.module.js
+calendar.component.js
+calendar.service.js
+calendar.directive.js
+calendar.filter.js
+calendar.spec.js
+calendar.html
+calendar.scss
+
+
+

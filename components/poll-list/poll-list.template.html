@@ -1,0 +1,25 @@
+  <h1> Survey List Overview </h1>
+
+<div>
+    <!--Body content-->
+    <ul >
+        <li ng-repeat="poll in $ctrl.polls">
+            <a href="#!/polls/{{poll.id}}">{{poll.name}}</a>
+        </li>
+    </ul>
+
+
+
+    <!-- TODO Add new assignment -->
+    <br></br>
+    <!--<label>Name: <input type="text" ng-model="$ctrl.name"/></label>
+    <button ng-click="$ctrl.addContact()">Add</button><br/>-->
+
+    <form ng-submit="$ctrl.addNewPoll()">
+        Add a new assignment:
+        <label>Name: <input type="text" ng-model="$ctrl.name"/></label>
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+
+
+</div>

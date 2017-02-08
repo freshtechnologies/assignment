@@ -1,0 +1,435 @@
+[
+    {
+        "id": "assignment-0000000001", 
+        "name": "Ticket for Change Mentor Assignment", 
+        "mentors": [
+            { 
+                "mentorId" : "00000",
+                "name" : "François Rouvier",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00001",
+                "name" : "Arnaud Habert",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00002",
+                "name" : "Emmanuel de Lutze",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00003",
+                "name" : "Pascale Guiffant",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00004",
+                "name" : "Gilles Vermot-Desroches",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00005",
+                "name" : "Benoit Ringot",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00006",
+                "name" : "Agnès Weil",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00007",
+                "name" : "Damien Desjonquères",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00008",
+                "name" : "Bouchra Aliouat",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00009",
+                "name" : "Lionel Bodin",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00010",
+                "name" : "Ucka Ludovic Ilolo",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00011",
+                "name" : "Benjamin Bouat",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00012",
+                "name" : "Laurence Grancolas",
+                "maxCap" : "2",
+                "description" : "no description given"
+            },
+			{ 
+                "mentorId" : "00013",
+                "name" : "Jean-Marc Guesné",
+                "maxCap" : "2",
+                "description" : "no description given"
+            }
+        ],
+        "mentees": [
+            {
+                "menteeId" : "00000",
+                "name" : "Lucile Lehoucq",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00011",
+                    "00012",
+                    "00013",
+                    "00008",
+					"00009"
+                ]
+
+            },
+			{
+                "menteeId" : "00001",
+                "name" : "Nadège Héraud-Chevé",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00013",
+                    "00002",
+                    "00001"
+                ]
+
+            },
+			{
+                "menteeId" : "00002",
+                "name" : "Anne-Sophie Ketterer",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00010",
+                    "00012"
+                ]
+
+            },
+			{
+                "menteeId" : "00003",
+                "name" : "Sophie Menez",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00000",
+                    "00012",
+                    "00013",
+                    "00005",
+					"00003",
+					"00007",
+					"00002"
+                ]
+
+            },
+			{
+                "menteeId" : "00004",
+                "name" : "Caroline Goblet",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00009"
+                ]
+
+            },
+			{
+                "menteeId" : "00005",
+                "name" : "Augustin Courau",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00009",
+                    "00005",
+                    "00000"
+                ]
+
+            },
+			{
+                "menteeId" : "00006",
+                "name" : "Patrice Guiho",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00004",
+                    "00003",
+                    "00005",
+                    "00002",
+					"00007",
+					"00009",
+					"00013",
+					"00011",
+					"00012",
+					"00010"
+                ]
+
+            },
+			{
+                "menteeId" : "00007",
+                "name" : "Fred Young",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00001",
+                    "00004",
+                    "00003",
+                    "00002"
+                ]
+
+            },
+			{
+                "menteeId" : "00008",
+                "name" : "Fanny Happiette",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00013",
+                    "00012",
+                    "00007",
+                    "00005",
+					"00006",
+					"00002",
+					"00000"
+                ]
+
+            },
+			{
+                "menteeId" : "00009",
+                "name" : "David Gache",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00002",
+                    "00001",
+                    "00009",
+                    "00006",
+					"00005",
+					"00000",
+					"00007"
+                ]
+
+            },
+			{
+                "menteeId" : "00010",
+                "name" : "Isabelle Ortolani",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00005",
+                    "00008",
+                    "00001"
+                ]
+
+            },
+			{
+                "menteeId" : "00011",
+                "name" : "Jean-Sébastien Bouget",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00010",
+                    "00012"
+                ]
+
+            },
+			{
+                "menteeId" : "00012",
+                "name" : "Stéphane Poiroux",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00001",
+                    "00006",
+                    "00010",
+                    "00002",
+					"00000",
+					"00009",
+					"00005"
+                ]
+
+            },
+			{
+                "menteeId" : "00013",
+                "name" : "Laetitia Sampaio de Jesus",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00008",
+                    "00009",
+                    "00011",
+                    "00005",
+					"00002"
+                ]
+
+            },
+			{
+                "menteeId" : "00014",
+                "name" : "Laurence Udiment",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00005",
+                    "00012",
+                    "00008",
+                    "00002",
+					"00009"
+                ]
+
+            },
+			{
+                "menteeId" : "00015",
+                "name" : "Cécile Catalano",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00013",
+                    "00012",
+                    "00009",
+                    "00002"
+                ]
+
+            },
+			{
+                "menteeId" : "00016",
+                "name" : "Peggy Auffray",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00008",
+                    "00009",
+                    "00002",
+                    "00005"
+                ]
+
+            },
+			{
+                "menteeId" : "00017",
+                "name" : "Blandine Stefani",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00008",
+                    "00011",
+                    "00004",
+                    "00003"
+                ]
+
+            },
+			{
+                "menteeId" : "00018",
+                "name" : "Thierry Fosseux",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00012",
+                    "00002"
+                ]
+
+            },
+			{
+                "menteeId" : "00019",
+                "name" : "Valérie Belhassen",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00008",
+                    "00011"
+                ]
+
+            },
+			{
+                "menteeId" : "00020",
+                "name" : "Niels Costard",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00009",
+                    "00002"
+                ]
+
+            },
+			{
+                "menteeId" : "00021",
+                "name" : "Irène Boyer-Souchet",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00009",
+                    "00006",
+                    "00008",
+                    "00003"
+                ]
+
+            },
+			{
+                "menteeId" : "00022",
+                "name" : "Wail Benfatma",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00009",
+                    "00005",
+                    "00000"
+                ]
+
+            },
+			{
+                "menteeId" : "00023",
+                "name" : "Sabine Lauria Pin",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00004",
+                    "00011",
+                    "00005",
+                    "00012"
+                ]
+
+            },
+			{
+                "menteeId" : "00024",
+                "name" : "Anne Benrikhi",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00007",
+                    "00004",
+                    "00013"
+                ]
+
+            },
+			{
+                "menteeId" : "00025",
+                "name" : "Lucie Taurines",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00008",
+                    "00004",
+                    "00013"
+                ]
+
+            },
+			{
+                "menteeId" : "00026",
+                "name" : "Reynald Bourdeaux",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00009",
+                    "00008",
+                    "00007",
+                    "00001"
+                ]
+
+            },
+			{
+                "menteeId" : "00027",
+                "name" : "Florence Bonnet-Touré",
+                "email" : "fred.young@gmx.at",
+                "ranking" : [
+                    "00009"
+                ]
+
+            }
+        ]
+    }, 
+    {
+        "id": "assignment-0000000002", 
+        "name": "Empty Assignment Project", 
+        "mentors": [],
+        "mentees": []
+    }
+]

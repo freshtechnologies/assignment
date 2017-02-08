@@ -1,0 +1,109 @@
+
+<h1> Poll Details </h1>
+<h2>NAME: {{$ctrl.poll.name}}</h2>
+<h2>ID: {{$ctrl.poll.id}}</h2>
+
+<h3>Overview Mentors</h3>
+<div>
+    <ul >
+        <li ng-repeat="mentor in $ctrl.poll.mentors">
+            <a >{{mentor.name}} (Capacity: {{mentor.maxCap}})</a>
+        </li>
+    </ul>
+
+    <form ng-submit="$ctrl.addNewMentor()">
+        <label>Name: <input type="text" ng-model="$ctrl.mentorName"/></label>
+        <label>Capacity: <input type="text" ng-model="$ctrl.mentorCap"/></label>
+        <input type="submit" id="submit" value="Add" />
+    </form>
+</div>
+
+<h3>Overview Mentees</h3>
+<div>
+    <ul >
+        <li ng-repeat="mentee in $ctrl.poll.mentees">
+            <a >{{mentee.name}}</a>
+            <a > {{mentee.email}}</a>
+            <a > {{mentee.ranking}}</a>
+        </li>
+    </ul>
+
+
+    <h3>jQuery UI Sortable - Default functionality</h3>
+    <form ng-submit="$ctrl.addNewMentee()">
+
+        <fieldset>
+
+        <label>Name: <input type="text" ng-model="$ctrl.menteeName"/></label>
+        <label>Email: <input type="text" ng-model="$ctrl.menteeEmail"/></label>
+
+        <table style="width: 800px">
+            <tr id="choices">
+                <td>
+                    <b> Rank your preferences </b>
+                    <ul id="sortable">
+                        <li ng-repeat="mentor in $ctrl.poll.mentors" class="ui-state-default" id="{{mentor.mentorId}}">
+                            <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                            <span>{{mentor.name}}</span>
+                        </li>
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" id="submit" value="Add" />
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+
+    <h3>jQuery UI Sortable - Connect lists</h3>
+
+    <label>Name: <input type="text" ng-model="$ctrl.menteeName"/></label>
+    <label>Email: <input type="text" ng-model="$ctrl.menteeEmail"/></label>
+
+    <table style="width: 800px">
+        <tr>
+            <td>
+                <ul id="sortable1" class="connectedSortable ui-state-highlight">
+                </ul>
+
+                <ul id="sortable2" class="connectedSortable">
+                    <li ng-repeat="mentor in $ctrl.poll.mentors" class="ui-state-default" id="{{mentor.mentorId}}">
+                        <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+                        <span>{{mentor.name}}</span>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button ng-click="$ctrl.addNewMentee()">add</button>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<br></br>
+
+ <h3>Calculate Assignments</h3>
+<button ng-click="$ctrl.calculate()">Caclulate!</button>
+
+    <p>
+		Total Cost: <input disabled id="total-cost" />
+    </p>
+    <p>
+        Indices: <input disabled id="indices" />
+    </p>
+
+    <table>
+            <tr ng-repeat="row in $ctrl.results track by $index">
+                <td ng-repeat="cell in row track by $index">
+                    <input type="text" value="{{cell}}"></input>
+                </td>
+            </tr>
+    </table>
+
+

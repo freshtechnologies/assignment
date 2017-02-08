@@ -1,0 +1,163 @@
+<h1> Instant Assignment Project</h1>
+
+<div class="container-fluid">
+
+  <!--ADD BOTTON -->
+  <div class="row">
+    <div class="col-md-12">
+    <button id="loadExample1" type="button" class="btn btn-default btn-sm" ng-click="$ctrl.loadExample()">
+      <span class="glyphicon glyphicon-sunglasses"></span> Load Example
+    </button>
+    </div>
+  </div>
+
+  <!-- ROW 1-->
+  <div class="row">
+
+    <!-- COL 1 -->
+    <div class="col-md-6">
+      <h2><small>Choices</small></h2>
+
+      <!--ACCORDION WIDGET -->
+      <div id="accordion1">
+
+        <div ng-repeat="choice in $ctrl.choices">
+          <!--ACCORDION HEADER-->
+          <h3>
+            {{choice.title}} <small>(id: {{choice.id}})</small>
+            <span class="glyphicon glyphicon-trash" style="float: right" ng-click="$ctrl.removeChoice(choice)"></span>
+          </h3>
+          <!--ACCORDION BODY-->
+          <div>
+            <div class="row">
+              <div class="form-group col-md-9">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" id="title" ng-model="choice.title">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="cap">Capacity:</label>
+                <input type="text" class="form-control" id="cap" ng-model="choice.capacity">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <br/>
+      <!--ADD BOTTON -->
+      <div>
+        <button type="button" class="btn btn-default btn-sm" id="addAccordion1" ng-click="$ctrl.addChoice()">
+          <span class="glyphicon glyphicon-plus"></span> Add Choice
+        </button>
+      </div>
+    </div>
+
+    <!-- COL 2 -->
+    <div class="col-md-6" >
+      <h2><small>Participants</small></h2>
+
+      <!--ACCORDION WIDGET -->
+      <div id="accordion2">
+
+        <div ng-repeat="participant in $ctrl.participants" id="{{participant.id}}">
+
+          <!--ACCORDION HEADER-->
+          <h3>{{participant.name}} <small>(id: {{participant.id}})</small>
+            <span class="glyphicon glyphicon-trash" style="float: right" ng-click="$ctrl.removeParticipant(participant)"></span>
+          </h3>
+
+          <!--ACCORDION BODY-->
+          <div>
+            <!--INPUT NAME-->
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" ng-model="participant.name">
+            </div>
+            <!--INPUT EMAIL-->
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" id="email" ng-model="participant.email">
+            </div>
+
+            <!--INPUT SCONNECTED SORTABLE-->
+            <div class="row">
+              <div class="col-xs-6 ">
+
+                <label>Preferences:</label>
+                <div ui-sortable="$ctrl.sortableOptions" class="connectedSortable" ng-model="participant.selected">
+                  <div class="sortablePlaceholder" ng-repeat="choiceId in participant.selected">
+                    <span class="glyphicon glyphicon-resize-vertical"></span> {{$ctrl.getChoiceTitleById(choiceId)}} ({{choiceId}})
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="col-xs-6">
+
+                <label>Choices:</label>
+                <div ui-sortable="$ctrl.sortableOptions" class="connectedSortable" ng-model="participant.unselected">
+                  <div class="sortablePlaceholder" ng-repeat="choiceId in participant.unselected">
+                    {{$ctrl.getChoiceTitleById(choiceId)}} ({{choiceId}})
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+      <!--ADD BOTTON -->
+      <div>
+        <button id="addAccordion2" type="button" class="btn btn-default btn-sm" ng-click="$ctrl.addParticipant()">
+          <span class="glyphicon glyphicon-plus"></span> Add Participant
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROW 1-->
+  <!--<div class="row">
+    <!- - COL 1 - ->
+    <div class="col-md-6" style="background-color:yellow;"> Choices
+    </div>
+    <!- - COL 2 - ->
+    <div class="col-md-6" style="background-color:yellow;"> Participants
+      <ul>
+        <li ng-repeat="participant in $ctrl.participants">
+          <span>{{participant.name}} ({{participant.id}})</span>
+          <br/>
+          <span>Selected: {{participant.selected}}</span>
+          <br/>
+          <span>Unselected: {{participant.unselected}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>-->
+  <br/>
+  <!--ADD BOTTON -->
+  <div>
+    <button id="calculateAssignments" type="button" class="btn btn-default btn-sm" ng-click="$ctrl.calculateAssignments()">
+      <span class="glyphicon glyphicon-sunglasses"></span> Calculate !
+    </button>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-sm-12 table-responsive">
+          <table class="table table-bordered table-condensed">
+            <tr ng-repeat="row in $ctrl.results track by $index">
+                <td ng-repeat="cell in row track by $index" ng-class="$ctrl.getClass(cell)">
+                    <label>{{cell}}</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+  </div>
+
+
+
+
+</div>

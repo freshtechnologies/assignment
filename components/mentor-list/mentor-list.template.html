@@ -1,0 +1,36 @@
+<div>
+  <label>Name: <input type="text" ng-model="$ctrl.name"/></label>
+  <button ng-click="$ctrl.greet()">greet</button><br/>
+  Contact:
+  <ul>
+    <li ng-repeat="contact in $ctrl.contacts">
+      <select ng-model="contact.type" id="select_{{$index}}">
+         <option>phone</option>
+         <option>email</option>
+      </select>
+      <input type="text" ng-model="contact.value" aria-labelledby="select_{{$index}}" />
+      <button ng-click="$ctrl.clearContact(contact)">clear</button>
+      <button ng-click="$ctrl.removeContact(contact)">X</button>
+    </li>
+    <li>[ <button ng-click="$ctrl.addContact()">add</button> ]</li>
+ </ul>
+</div>
+
+<ul ui-sortable ng-model="$ctrl.items">
+  <li ng-repeat="item in $ctrl.items">{{ item }}</li>
+</ul>
+
+<ul>
+  <li ng-repeat="item in $ctrl.items">{{ item }}</li>
+</ul>
+
+
+
+
+
+<!--<ul>
+  <li ng-repeat="phone in $ctrl.phones">
+    <span>{{phone.name}}</span>
+    <p>{{phone.snippet}}</p>
+  </li>
+</ul>-->
